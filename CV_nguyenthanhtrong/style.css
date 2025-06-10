@@ -12,6 +12,25 @@ body {
     color: #22223b; /* Default text color for light mode */
 }
 
+a {
+    color: #fff; /* White as requested */
+    text-decoration: none; /* Optional: removes underline */
+    transition: color 0.3s ease; /* Smooth transition */
+}
+
+a:hover {
+    color: #3498db; /* Blue on hover as requested */
+}
+
+/* Dark mode styles for links */
+body.dark-mode a {
+    color: #fff; /* White in dark mode */
+}
+
+body.dark-mode a:hover {
+    color: #3498db; /* Blue on hover in dark mode */
+}
+
 /* CV wrapper styles */
 .cv-wrapper {
     padding-left: 30px;
@@ -112,7 +131,7 @@ body.dark-mode .experience {
 }
 
 body.dark-mode .project .web {
-    color: #4dffff;
+    color: #fff;
 }
 
 body.dark-mode .project .item::before {
@@ -178,11 +197,11 @@ body.dark-mode .experience li {
 }
 
 .project .web {
-    color: #6366f1;
+    color: #fff;
 }
 
 .project .web:hover {
-    color: #f59e42;
+    color: #3498db;
 }
 
 /* Section hover effects */
@@ -471,7 +490,7 @@ body.dark-mode h2:hover i {
 }
 
 .project .web {
-    color: #6366f1;
+    color: #fff;
     padding: 10px 0;
     text-decoration: none;
     font-weight: 600;
@@ -479,7 +498,7 @@ body.dark-mode h2:hover i {
 }
 
 .project .web a:hover {
-    color: #f59e42;
+    color: #3498db;
 }
 
 .project .location {
